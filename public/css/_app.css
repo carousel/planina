@@ -1,6 +1,6 @@
-img {
-  width: 1250px;
-  height: 600px;
+html {
+  background: url('/images/maglic.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 div.search {
   position: absolute;

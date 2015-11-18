@@ -10,8 +10,7 @@
     <div class="search" >
         <input type="text" class="typeahead form-control" placeholder='pocni da kucas...'>   
     </div>
-    
-   <img src="/images/durmitor.jpg">
+
 
 
 </body>

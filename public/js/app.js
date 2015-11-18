@@ -85,7 +85,9 @@
 //   'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
 // ];
 
-var states = ['Maglic', 'Prenj','Cvrsnica','Otomalj','Cincar','Vitorog','Troglav','Sator','Durmitor','Bjelasnica','Jahorina','Vlasic','Visocica'];
+var states = ['Maglic','Volujak','Cvrsnica','Prenj','Cvrsnica','Otomalj','Cincar','Vitorog',
+              'Troglav','Sator','Durmitor','Bjelasnica','Jahorina','Vlasic','Visocica','Treskavice',
+              'Zelengora','Klekovaca','Igman','Sator','Vran'];
 
 $('.typeahead').typeahead({
   hint: true,
