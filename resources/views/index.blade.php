@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/bootstrap.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/_app.css')}}">
-
-</head>
+@include('layouts.head')
 <body>
-    <div class="search" >
-        <input type="text" class="typeahead form-control" placeholder='pocni da kucas...'>   
-    </div>
-
-
+@include('_partials.map')
+        <div class="header-title">
+            <p>Mountains of Bosnia and Herzegovina</p>       
+        </div>
+        
+        <div class="search">
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                   <input type="text" class="typeahead form-control" placeholder='start to type ...'>        
+                </div>
+                &nbsp;<span class="middle-text">or choose</span>&nbsp;
+                <div class="form-group">
+                    <select class="form-control select-destination">
+                        <option>Vlasic</option>
+                        <option>Cincar</option>
+                        <option>Otomalj</option> 
+                        <option>Troglav</option> 
+                        <option>Visocica</option>
+                    </select>          
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-success select-button">Go</button>
+                </div>    
+            </form>   
+        </div>
+       
 
 </body>
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="/js/plugins/typeahead.bundle.js"></script>
-    <script src="/js/app.js"></script>
+  @include('layouts.scripts')
 </html>

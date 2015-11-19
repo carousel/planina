@@ -98,3 +98,20 @@ $('.typeahead').typeahead({
   name: 'states',
   source: substringMatcher(states)
 });
+
+// $(document.body).on('click','.tt-suggestion',function  () {
+//     alert($(this).text());
+// })
+// $('select.select-destination').on('click',function  () {
+//     alert($(this).val());
+// })
+$('.select-button').on('click',function (e) {
+    e.preventDefault();
+    $('#google-map-modal').modal();
+    if($('input.tt-input').val() != ''){
+        $('p.modal-text').text(($('input.tt-input').val()) + ' map');
+        $('input.tt-input').val('');
+    }else{
+        $('p.modal-text').text(($('select.select-destination').val()) + ' map');
+    }
+})
